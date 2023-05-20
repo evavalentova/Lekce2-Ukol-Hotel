@@ -1,59 +1,22 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Booking {
-    private int roomNumber;
     private LocalDate checkIn;
     private LocalDate checkOut;
     private TypeOfVacation typeOfVacation;
     private Room room;
     private Guest guest;
-
-    private Guest guest2;
-
-    private Guest guest3;
-
-    private List<Guest> otherGuests;
+    private List<Guest> otherGuests = new ArrayList<>();
 
 
-
-
-    public Booking(int roomNumber, LocalDate checkIn, LocalDate checkOut, TypeOfVacation typeOfVacation, Room room, Guest guest) {
-        this.roomNumber = roomNumber;
+    public Booking(LocalDate checkIn, LocalDate checkOut, TypeOfVacation typeOfVacation, Room room, Guest guest) {
         this.checkIn = checkIn;
         this.checkOut = checkOut;
         this.typeOfVacation = typeOfVacation;
         this.room = room;
         this.guest = guest;
-    }
-
-    public Booking(int roomNumber, LocalDate checkIn, LocalDate checkOut, TypeOfVacation typeOfVacation, Room room, Guest guest, Guest guest2) {
-        this.roomNumber = roomNumber;
-        this.checkIn = checkIn;
-        this.checkOut = checkOut;
-        this.typeOfVacation = typeOfVacation;
-        this.room = room;
-        this.guest = guest;
-        this.guest2 = guest2;
-    }
-
-    public Booking(int roomNumber, LocalDate checkIn, LocalDate checkOut, TypeOfVacation typeOfVacation, Room room, Guest guest, Guest guest2, Guest guest3) {
-        this.roomNumber = roomNumber;
-        this.checkIn = checkIn;
-        this.checkOut = checkOut;
-        this.typeOfVacation = typeOfVacation;
-        this.room = room;
-        this.guest = guest;
-        this.guest2 = guest2;
-        this.guest3 = guest3;
-    }
-
-    public int getRoomNumber() {
-        return roomNumber;
-    }
-
-    public void setRoomNumber(int roomNumber) {
-        this.roomNumber = roomNumber;
     }
 
     public LocalDate getCheckIn() {
@@ -96,19 +59,15 @@ public class Booking {
         this.guest = guest;
     }
 
-    public Guest getGuest2() {
-        return guest2;
+    public List<Guest> getOtherGuests() {
+        return otherGuests;
     }
 
-    public void setGuest2(Guest guest2) {
-        this.guest2 = guest2;
+    public void setOtherGuests(List<Guest> otherGuests) {
+        this.otherGuests = otherGuests;
     }
 
-    public Guest getGuest3() {
-        return guest3;
-    }
-
-    public void setGuest3(Guest guest3) {
-        this.guest3 = guest3;
+    public void addGuest(Guest newOtherGuest) {
+        otherGuests.add(newOtherGuest);
     }
 }

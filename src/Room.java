@@ -58,12 +58,12 @@ public class Room {
 
     @Override
     public String toString() {
-        return "Room{" +
-                "roomNumber=" + roomNumber +
-                ", numberOfBeds=" + numberOfBeds +
-                ", hasBalcony=" + hasBalcony +
-                ", hasSeaView=" + hasSeaView +
-                ", pricePerNight=" + pricePerNight +
+        return "Room {" +
+                "roomNumber = " + roomNumber +
+                ", numberOfBeds = " + numberOfBeds +
+                ", hasBalcony = " + hasBalcony +
+                ", hasSeaView = " + hasSeaView +
+                ", pricePerNight = " + pricePerNight +
                 '}';
     }
 }
