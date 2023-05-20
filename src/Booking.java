@@ -70,4 +70,5 @@ public class Booking {
     public void addGuest(Guest newOtherGuest) {
         otherGuests.add(newOtherGuest);
     }
+
 }

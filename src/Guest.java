@@ -38,4 +38,9 @@ public class Guest {
     public static String getDescription(Guest guest) {
         return guest.getFirstName() + " " + guest.getSurname() + " (" + guest.getBirthDate().getDayOfMonth() + "." + guest.getBirthDate().getMonthValue() + "." + guest.getBirthDate().getYear() + ")";
     }
+
+    @Override
+    public String toString() {
+        return firstName + " " + surname;
+    }
 }

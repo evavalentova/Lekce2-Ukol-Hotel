@@ -59,11 +59,11 @@ public class Room {
     @Override
     public String toString() {
         return "Room {" +
-                "roomNumber = " + roomNumber +
-                ", numberOfBeds = " + numberOfBeds +
-                ", hasBalcony = " + hasBalcony +
-                ", hasSeaView = " + hasSeaView +
-                ", pricePerNight = " + pricePerNight +
+                "pokoj č. " + roomNumber +
+                ", počet lůžek: " + numberOfBeds +
+                ", balkón: " + hasBalcony +
+                ", výhled na moře: " + hasSeaView +
+                ", cena za noc: " + pricePerNight +
                 '}';
     }
 }

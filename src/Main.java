@@ -27,12 +27,8 @@ public class Main {
 
         bookings.addBooking(firstBooking);
         bookings.addBooking(secondBooking);
-
         secondBooking.addGuest(secondGuest);
 
         bookings.printAllBookings();
-
-
-
     }
 }

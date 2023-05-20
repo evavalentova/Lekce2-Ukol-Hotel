@@ -10,11 +10,6 @@ public class ListOfBookings {
         bookings.add(newBooking);
     }
 
-
-
-
-
-
     public void printAllBookings() {
         for (Booking booking : bookings) {
             System.out.println("Rezervace na pokoj č. " + booking.getRoom().getRoomNumber() + " od " + booking.getCheckIn() + " do " + booking.getCheckOut() + ", typ pobytu: " + booking.getTypeOfVacation() + ", hosté: " + booking.getGuest().getFirstName() + " " + booking.getGuest().getSurname() + " " + booking.getOtherGuests());
