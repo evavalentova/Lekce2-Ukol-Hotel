@@ -71,4 +71,15 @@ public class Booking {
         otherGuests.add(newOtherGuest);
     }
 
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "checkIn=" + checkIn +
+                ", checkOut=" + checkOut +
+                ", typeOfVacation=" + typeOfVacation +
+                ", room=" + room +
+                ", guest=" + guest +
+                ", otherGuests=" + otherGuests +
+                '}';
+    }
 }
